@@ -11,3 +11,10 @@ Options:
 			Measured in Milliseconds
 			Defaults to 5000
 */
+
+see an example working here:
+http://jsfiddle.net/bCgWW/
+
+USAGE:
+
+$('selector').onHold(function(){alert('250');},{time:250});
