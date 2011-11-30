@@ -1,0 +1,13 @@
+/*
+This is free software, its code can be redistributed and/or modified at will for any purpose. Just leave this header here. Thanks
+--MrKmg
+*/
+
+/*
+
+Options:
+
+	time: 	Period of time a user should have to hold their mouse button down on an object to fire the event;
+			Measured in Milliseconds
+			Defaults to 5000
+*/
