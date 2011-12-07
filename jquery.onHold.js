@@ -14,7 +14,7 @@ Options:
 			Defaults to 5000
 	click: 	Which mouse buttons should count
 			left, middle, right, left_right, or all
-			defaults to both
+			defaults to all
 
 */
 

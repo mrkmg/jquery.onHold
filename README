@@ -5,16 +5,24 @@ This is free software, its code can be redistributed and/or modified at will for
 
 /*
 
+callback : function(ev)
+
 Options:
 
 	time: 	Period of time a user should have to hold their mouse button down on an object to fire the event;
 			Measured in Milliseconds
 			Defaults to 5000
+	click: 	Which mouse buttons should count
+			left, middle, right, left_right, or all
+			defaults to all
+
 */
 
 see an example working here:
-http://jsfiddle.net/bCgWW/
+http://jsfiddle.net/YvZcS/
 
 USAGE:
 
-$('selector').onHold(function(){alert('250');},{time:250});
+$('selector').onHold(function(ev){
+		//do something here, you can even do ev.preventDefault
+	},{time:250});
