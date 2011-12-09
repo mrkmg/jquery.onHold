@@ -1,0 +1,25 @@
+{
+	"name":"onHold",
+	"version":"1.0",
+	"title":"jQuery onHold Event",
+	"author":"Kevin Gravier",
+	"description":"An onHold event that watches how long you hold a mouse click down on an element and fires a function.",
+	"licenses": [
+	   {
+		   "type": "GPLv2",
+		   "url": "http://www.example.com/licenses/gpl.html"
+	   }
+	],
+	"dependencies": {
+        "jquery": "1"
+    },
+	"keywords": [
+		"mousedown",
+		"hold",
+		"onHold"
+	],
+	"homepage": "https://github.com/mrkmg/jquery.onHold",
+	"files": [
+        "jquery.onHold.js"
+    ]
+}
