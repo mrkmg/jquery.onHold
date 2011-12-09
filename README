@@ -1,9 +1,9 @@
-/*
-This is free software, its code can be redistributed and/or modified at will for any purpose. Just leave this header here. Thanks
---MrKmg
-*/
 
-/*
+This is free software. This software may be distributed under the terms of this General Public License v2.
+http://www.gnu.org/licenses/gpl-2.0.html
+--MrKmg
+
+
 
 callback : function(ev)
 
@@ -16,13 +16,17 @@ Options:
 			left, middle, right, left_right, or all
 			defaults to all
 
-*/
+
+ 
+
+Examples
+
+using defaults (5 seconds, any mouse button)
+	$(selector/object).onHold(function(ev){ alert('onHold fired') });
+
+Custom options (1 second, only left mouse button
+	$(selector/object).onHold(function(ev){ alert('onHold fired') },{time:1000,click:'left'});
+
 
 see an example working here:
 http://jsfiddle.net/YvZcS/
-
-USAGE:
-
-$('selector').onHold(function(ev){
-		//do something here, you can even do ev.preventDefault
-	},{time:250});
