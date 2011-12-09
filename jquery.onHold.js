@@ -1,22 +1,33 @@
-/*
-This is free software, its code can be redistributed and/or modified at will for any purpose. Just leave this header here. Thanks
---MrKmg
-*/
+/**
+ * This is free software. This software may be distributed under the terms of this General Public License v2.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ * --MrKmg
+ */
 
-/*
-
-callback : function(ev)
-
-Options:
-
-	time: 	Period of time a user should have to hold their mouse button down on an object to fire the event;
-			Measured in Milliseconds
-			Defaults to 5000
-	click: 	Which mouse buttons should count
-			left, middle, right, left_right, or all
-			defaults to all
-
-*/
+/**
+ *
+ * callback : function(ev)
+ *
+ * Options:
+ *
+ *	time: 	Period of time a user should have to hold their mouse button down on an object to fire the event;
+ *			Measured in Milliseconds
+ *			Defaults to 5000
+ *	click: 	Which mouse buttons should count
+ *			left, middle, right, left_right, or all
+ *			defaults to all
+ *
+ */
+ 
+/**
+ * Examples
+ * 
+ * using defaults (5 seconds, any mouse button)
+ * 	$(selector/object).onHold(function(ev){ alert('onHold fired') });
+ *
+ * Custom options (1 second, only left mouse button
+ * 	$(selector/object).onHold(function(ev){ alert('onHold fired') },{time:1000,click:'left'});
+ */
 
 (function( $ ){
     $.fn.onHold= function(callback,options) {
