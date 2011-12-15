@@ -1,6 +1,6 @@
 {
 	"name":"onHold",
-	"version":"v1.0.2",
+	"version":"v1.0.3",
 	"title":"jQuery onHold Event",
 	"author":"Kevin Gravier",
 	"description":"An onHold event that watches how long you hold a mouse click down on an element and fires a function.",
