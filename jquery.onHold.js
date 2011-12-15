@@ -68,7 +68,7 @@
 					
 					setTimeout(function(){
 							if($this.data('onHold_selected')){
-								$this.onHold_callback();
+								$this.onHold_callback(ev);
 							}},settings.time);
 
 					$this.mouseup(function(ev){
