@@ -1,0 +1,44 @@
+<html>
+	<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="jquery.onHold.js"></script>
+	
+	<style>
+		.demo
+		{
+			width:100px;
+			height:100px;
+			float:left;
+			margin:10px;
+			padding:10px;
+			background:#CCC;
+		}
+	</style>
+	</head>
+	<body>
+		<div id="demo1" class="demo">1s, Any</div>
+		<div id="demo2" class="demo">1s, Left</div>
+		<div id="demo3" class="demo">1s, Right</div>
+		<div id="demo4" class="demo">1s, Middle</div>
+		<div id="demo5" class="demo">.5s, Left or Right</div>
+		<script>
+			$(document).ready(function(){
+				
+				var blink = function(ev){
+					ev.preventDefault();
+					console.log($(this));
+					$(this).fadeOut('fast',function(){
+						$(this).fadeIn('fast');
+					});
+				}
+				
+				$('#demo1').onHold(blink,{time:1000});
+				$('#demo2').onHold(blink,{time:1000,click:'left'});
+				$('#demo3').onHold(blink,{time:1000,click:'right'});
+				$('#demo4').onHold(blink,{time:1000,click:'middle'});
+				$('#demo5').onHold(blink,{time:500,click:'left_right'});
+				
+			});
+		</script>
+	</body>
+</html>
