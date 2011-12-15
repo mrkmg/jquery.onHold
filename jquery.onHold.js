@@ -39,6 +39,7 @@
 		
 		return this.each(function(){
 			var $this = $(this);
+			$this.onHold_callback = callback;
 			$this.data('onHold_selected',false);
 			$this.mousedown(function(ev){
 				var valid = false;
@@ -67,7 +68,7 @@
 					
 					setTimeout(function(){
 							if($this.data('onHold_selected')){
-								 callback(ev);
+								$this.onHold_callback();
 							}},settings.time);
 
 					$this.mouseup(function(ev){
